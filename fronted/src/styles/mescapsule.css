@@ -1,0 +1,126 @@
+.capsules-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .capsule-header7 {
+    display: flex;
+    justify-content: left;
+    gap:20px;
+    align-items: center;
+    margin: 0 0 0 0;
+
+  }
+  .profile-picture12 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .capsule-title12 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  
+  .capsules-list {
+    display: flex;
+    justify-content: left;
+    flex-wrap:wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    position: relative;
+    margin: 15px;
+    width: 450px;
+    height: 350px;
+    background:  linear-gradient(-45deg, #43270670 0%, #374d48d1 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer; /* Ajouter un curseur pour indiquer qu'il est cliquable */
+    z-index: 1;
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+  }
+  
+  .card:hover .card__content,
+  .card.active .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description12 {
+    margin: 15px 10px 15px 0px;
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.4;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .card.disabled {
+    background: linear-gradient(-45deg, #43270670 0%, #374d48d1 100%);
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .card.disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .card.disabled svg {
+    fill: #000000;
+  }
+  
+  .card.active {
+    transform: scale(1.05); /* Légère échelle pour un effet interactif */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card.active:hover .card__content {
+    opacity: 1;
+  }
+  

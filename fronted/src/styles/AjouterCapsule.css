@@ -1,0 +1,331 @@
+/* Styles globaux */
+
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+
+  .large-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .large-recaputilatif {
+    display: flex;
+    size: 18px;
+    gap:10px;
+    
+    flex-direction: column;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-row textarea,
+  .form-row input[type="text"],
+  .form-row select,
+  .form-row input[type="datetime-local"], .inputform1{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .toggle-switch {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    background: #ccc;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch:checked {
+    background: #594721;
+  }
+  
+  .toggle-switch:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+  }
+  
+  .toggle-switch:checked:before {
+    transform: translateX(20px);
+  }
+  
+  .button-row {
+    display: flex;
+    gap:10px;
+    justify-content: flex-end;
+  }
+  .button-row2 {
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .next-button,.previous-button,.boutonajout{
+    background: #594721;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .submitajout{
+    background: #198504;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .next-button:hover,.previous-button:hover,.boutonajout:hover {
+    background: #52677d;
+  }
+  
+  
+  .hugetitle {
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 80px !important;
+    letter-spacing: 1.3;
+    margin-bottom: 20px;
+    color: #594721;
+  }
+  
+  /* Barre de progression */
+  .step-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .completed .circle {
+    background-color: #594721;
+    border-color: #594721;
+    color: #fff;
+  }
+  
+  .current .circle {
+    border-color: #52677d;
+    color: #52677d;
+  }
+  
+  .label6 {
+    margin-left: 8px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .completed .label6 {
+    color: #594721;
+  }
+  
+  .line {
+    height: 2px;
+    width: 150px;
+    background-color: #ccc;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .completed + .line {
+    background-color: #4caf50;
+  }
+  
+  
+  /* Formulaires */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form > div {
+    margin-bottom: 15px;
+  }
+  
+  .labelform1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+ 
+ 
+  .form-row textarea {
+    height: 80px;
+  }
+  /* 
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type="button"] {
+    background: #4caf50;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background: #45a049;
+  }
+  
+  button[type="submit"] {
+    background: #008cba;
+    color: #fff;
+  }
+  
+  button[type="submit"]:hover {
+    background: #007bb5;
+  }*/
+  
+  /* Conteneur pour dropzone */
+  .dropzone {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropzone p {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* Prévisualisation vidéo 
+  .video-preview {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    background: #000;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul li button {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  ul li button:hover {
+    background: #c0392b;
+  }
+  */
+
+  .recipient-item {
+    margin-top: 10px;
+    display: flex; /* Aligne les items horizontalement */
+    padding: 10px; /* Ajoute un peu d'espace autour */
+    border-bottom: 1px solid #ccc; /* Optionnel : séparateur entre les items */
+  }
+  
+  .recipient-info {
+    display: flex; /* Aligne les éléments horizontalement */
+    justify-content: space-between; /* Sépare le nom et le bouton */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Prend toute la largeur disponible */
+  }
+  
+  .recipient-name {
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Met le nom en gras */
+    margin-right: 10px; /* Espace entre le nom et les autres éléments (optionnel) */
+  }
+  
+  .remove-btn {
+    background-color: transparent; /* Rendre le bouton transparent */
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Ajoute un curseur pointeur */
+    color: #d9534f; /* Couleur du bouton (optionnel) */
+    font-size: 16px; /* Taille de l'icône ou du texte */
+    display: flex; /* Pour centrer l'icône à l'intérieur */
+    align-items: center;
+  }
+  
